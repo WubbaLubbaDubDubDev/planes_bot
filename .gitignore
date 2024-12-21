@@ -1,0 +1,16 @@
+.env
+
+.idea/
+
+venv/
+
+__pycache__
+
+sessions/*
+
+!sessions/.gitkeep
+
+*.session
+
+*.device
+

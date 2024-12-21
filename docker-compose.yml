@@ -1,0 +1,8 @@
+version: '3'
+services:
+  bot:
+    container_name: 'PlanesBot'
+    build:
+      context: .
+    stop_signal: SIGINT
+    restart: unless-stopped

@@ -1,0 +1,3 @@
+socks5://2fafd27e4b55790134c2__cr.ua:5eff299479d81fe8@gw.dataimpulse.com:10000
+socks5://2fafd27e4b55790134c2__cr.ua:5eff299479d81fe8@gw.dataimpulse.com:10001
+socks5://2fafd27e4b55790134c2__cr.ua:5eff299479d81fe8@gw.dataimpulse.com:10002

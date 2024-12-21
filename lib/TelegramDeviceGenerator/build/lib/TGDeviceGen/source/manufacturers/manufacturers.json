@@ -1,0 +1,10 @@
+{
+  "Google": [
+    {"Name": "Pixel 8 Pro", "AndroidVersions": ["14", "15"], "PerformanceClass":  "HIGH"},
+    {"Name": "Pixel 8", "AndroidVersions": ["14", "15"], "PerformanceClass":  "HIGH"},
+    {"Name": "Pixel 7 Pro", "AndroidVersions": ["14", "15"], "PerformanceClass":  "HIGH"},
+    {"Name": "Pixel 7", "AndroidVersions": ["14", "15"], "PerformanceClass":  "HIGH"},
+    {"Name": "Pixel 6 Pro", "AndroidVersions": ["13", "14", "15"], "PerformanceClass":  "HIGH"},
+    {"Name": "Pixel 6", "AndroidVersions": ["13", "14", "15"], "PerformanceClass":  "HIGH"}
+  ]
+}

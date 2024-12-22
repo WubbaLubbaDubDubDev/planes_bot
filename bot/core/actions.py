@@ -8,6 +8,8 @@ from telethon.errors import ChannelsTooMuchError, ChannelInvalidError, ChannelPr
 
 from bot.config.config import settings
 from bot.core.headers import send_headers
+from bot.models.booster import Booster
+from bot.models.card import Card
 from bot.utils.client_with_retries import ClientWithRetries
 from bot.utils.logger import logger
 from bot.models.profile import Profile
@@ -25,6 +27,12 @@ class ActionManager:
         self.response_header = copy.deepcopy(send_headers)
         self.response_header.update(auth_header)
         self.tg_client = tg_client
+        self.cards = None
+        self.boosters = None
+
+    async def get_init_data(self):
+        self.boosters = await self.get_boosters()
+        self.cards = await self.get_cards()
 
     async def subscribe_channel(self, channel):
         async with self.tg_client:
@@ -50,11 +58,22 @@ class ActionManager:
         earned_total = 0
 
         if profile.available_messages_count <= 0:
-            # logger.info(f'{self.session_name} | No available messages to send. The next message will be available on:'
-            #            f' <y>{profile.next_available_message_date.strftime("%d.%m.%Y %H:%M")}</y>')
+            logger.info(f'{self.session_name} | No available messages to send')
             pass
 
         else:
+            shared_message_id = None
+            if (self.cards is not None) and (len(self.cards) > 0):
+                actions = [
+                    (self.choose_card, 0.7),
+                    (self.get_shared_message_id, 0.3)
+                ]
+                functions, weights = zip(*actions)
+                chosen_function = random.choices(functions, weights=weights, k=1)[0]
+                shared_message_id = await chosen_function()
+            else:
+                shared_message_id = await self.get_shared_message_id()
+
             for _ in range(profile.available_messages_count):
                 url = 'https://backend.planescrypto.com/planes/success-share-message'
                 response = await self.http_client.post_with_retry(url=url,
@@ -161,3 +180,40 @@ class ActionManager:
                                                          headers=self.response_header)
         response_data = await response.json()
         return response_data
+
+    async def choose_card(self):
+        cards = self.cards
+        cards_count = len(cards)
+        shared_message_id = None
+        for card_number in range(random.randint(0, cards_count)):
+            card_id = cards[card_number].id
+            shared_message_id = await self.get_shared_message_id(card_id=card_id)
+            delay = random.uniform(0.3, 1)
+            await asyncio.sleep(delay=delay)
+        return shared_message_id
+
+    async def get_cards(self):
+        url = 'https://backend.planescrypto.com/cards'
+        response = await self.http_client.get_with_retry(url=url,
+                                                         headers=self.response_header)
+        response_data = await response.json()
+        cards = [Card.from_dict(data=card) for card in response_data]
+        return cards
+
+    async def get_shared_message_id(self, card_id: int = None):
+        if card_id:
+            url = f'https://backend.planescrypto.com/cards/get-share-message?card_id={card_id}'
+        else:
+            url = f'https://backend.planescrypto.com/planes/get-share-message'
+        response = await self.http_client.get_with_retry(url=url,
+                                                         headers=self.response_header)
+        response_data = await response.json()
+        return response_data['id']
+
+    async def get_boosters(self):
+        url = 'https://backend.planescrypto.com/boosters'
+        response = await self.http_client.get_with_retry(url=url,
+                                                         headers=self.response_header)
+        response_data = await response.json()
+        boosters = [Booster.from_dict(data=booster) for booster in response_data]
+        return boosters

@@ -1,4 +1,4 @@
-[![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/notpixel/app?startapp=f411905106)
+[![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/plane_cryptobot/planes?startapp=ref_T78O2Z)
 
 ## PLANES FARMING BOT ( free version )
 
@@ -12,17 +12,24 @@ To avoid this risk, it is highly recommended to register **new sessions** exclus
 
 ## Features
 
-| Feature                                        | Free Version | Paid Version |
-|------------------------------------------------|:------------:|:------------:|
-| Sending messages                               |      ✅       |      ✅       |
-| Completing tasks                               |      ✅       |      ✅       |
-| Night mode                                     |      ✅       |      ✅       |
-| Proxy binding support                          |      ✅       |      ✅       |
-| Using proxies without binding                  |      ✅       |      ✅       |
-| Built with Telethon                            |      ✅       |      ✅       |
-| Protection against API changes                 |      ❌       |      ✅       |
-| Option to switch between Telethon and Pyrogram |      ❌       |      ✅       |
-| Tracking farm profit via your Telegram bot     |      ❌       |      ✅       |
+| Feature                                        | Free Version  | Paid Version |
+|------------------------------------------------|:-------------:|:------------:|
+| Sending messages                               |       ✅       |      ✅       |
+| Completing tasks                               |       ✅       |      ✅       |
+| Night mode                                     |       ✅       |      ✅       |
+| Proxy binding support                          |       ✅       |      ✅       |
+| Using proxies without binding                  |       ✅       |      ✅       |
+| Built with Telethon                            |       ✅       |      ✅       |
+| Protection against API changes                 |       ❌       |      ✅       |
+| Option to switch between Telethon and Pyrogram |       ❌       |      ✅       |
+| Tracking farm profit via your Telegram bot     |       ❌       |      ✅       |
+| All referrals become yours                     |       ❌       |      ✅       |
+
+
+
+
+
+
 
 ---
 

@@ -57,6 +57,7 @@ class Tapper:
                                                    access_token=self.user_data.access_token,
                                                    tg_client=self.tg_client)
 
+                    await action_manager.get_init_data()
                     await action_manager.complete_tutorial_if_needed()
 
                     actions = []

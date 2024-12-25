@@ -32,7 +32,7 @@ class ActionManager:
 
     async def get_init_data(self):
         self.boosters = await self.get_boosters()
-        self.cards = await self.get_cards()
+        #self.cards = await self.get_cards()
 
     async def subscribe_channel(self, channel):
         async with self.tg_client:
@@ -62,6 +62,7 @@ class ActionManager:
             pass
 
         else:
+            """
             shared_message_id = None
             if (self.cards is not None) and (len(self.cards) > 0):
                 actions = [
@@ -73,6 +74,7 @@ class ActionManager:
                 shared_message_id = await chosen_function()
             else:
                 shared_message_id = await self.get_shared_message_id()
+            """
 
             for _ in range(profile.available_messages_count):
                 url = 'https://backend.planescrypto.com/planes/success-share-message'

@@ -23,7 +23,6 @@ To avoid this risk, it is highly recommended to register **new sessions** exclus
 | Built with Telethon                            |      ✅       |      ✅       |
 | Protection against API changes                 |      ❌       |      ✅       |
 | Option to switch between Telethon and Pyrogram |      ❌       |      ✅       |
-| Tracking farm profit via your Telegram bot     |      ❌       |      ✅       |
 | All referrals become yours                     |      ❌       |      ✅       |
 
 
@@ -36,8 +35,7 @@ To avoid this risk, it is highly recommended to register **new sessions** exclus
 
 ## Paid Version
 
-The paid version is **currently under development**. Stay tuned for updates and announcements. 🚀
-
+The paid version is now available for purchase. Contact via Telegram @best_soft_seller for more details. 💎📲 
 ---
 
 ## Configuration

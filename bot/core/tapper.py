@@ -63,15 +63,15 @@ class Tapper:
                     actions = []
 
                     if settings.ENABLE_MESSAGE_SENDING:
-                        actions.append(action_manager.send)
+                        actions.append(action_manager.send())
 
                     if settings.ENABLE_TASKS:
-                        actions.append(action_manager.tasks)
+                        actions.append(action_manager.tasks())
 
                     random.shuffle(actions)
 
                     for action in actions:
-                        await action()
+                        await action
 
             except Exception as error:
                 logger.warning(f"{self.account.session_name} | Unhandled error: {error}")

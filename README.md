@@ -12,18 +12,19 @@ To avoid this risk, it is highly recommended to register **new sessions** exclus
 
 ## Features
 
-| Feature                                        | Free Version  | Paid Version |
-|------------------------------------------------|:-------------:|:------------:|
-| Sending messages                               |       ✅       |      ✅       |
-| Completing tasks                               |       ✅       |      ✅       |
-| Night mode                                     |       ✅       |      ✅       |
-| Proxy binding support                          |       ✅       |      ✅       |
-| Using proxies without binding                  |       ✅       |      ✅       |
-| Built with Telethon                            |       ✅       |      ✅       |
-| Protection against API changes                 |       ❌       |      ✅       |
-| Option to switch between Telethon and Pyrogram |       ❌       |      ✅       |
-| Tracking farm profit via your Telegram bot     |       ❌       |      ✅       |
-| All referrals become yours                     |       ❌       |      ✅       |
+| Feature                                        | Free Version | Paid Version |
+|------------------------------------------------|:------------:|:------------:|
+| Sending messages                               |      ✅       |      ✅       |
+| Completing tasks                               |      ✅       |      ✅       |
+| Automatic Ad Watching for Energy Recovery      |      ❌       |      ✅       |
+| Night mode                                     |      ✅       |      ✅       |
+| Proxy binding support                          |      ✅       |      ✅       |
+| Using proxies without binding                  |      ✅       |      ✅       |
+| Built with Telethon                            |      ✅       |      ✅       |
+| Protection against API changes                 |      ❌       |      ✅       |
+| Option to switch between Telethon and Pyrogram |      ❌       |      ✅       |
+| Tracking farm profit via your Telegram bot     |      ❌       |      ✅       |
+| All referrals become yours                     |      ❌       |      ✅       |
 
 
 

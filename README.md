@@ -31,7 +31,7 @@ To avoid this risk, it is highly recommended to register **new sessions** exclus
 
 ## Paid Version
 
-The paid version is now available for purchase. Contact via Telegram market [**@MaineMarketBot**](https://t.me/MaineMarketBot) for more details. 💎📲 
+The paid version is now available for purchase. Contact via Telegram market [**@MaineMarketBot**](https://t.me/MaineMarketBot?start=QZ4C0NIQ) for more details. 💎📲 
 ---
 
 ## Configuration

@@ -23,19 +23,15 @@ To avoid this risk, it is highly recommended to register **new sessions** exclus
 | Built with Telethon                            |      ✅       |      ✅       |
 | Protection against API changes                 |      ❌       |      ✅       |
 | Option to switch between Telethon and Pyrogram |      ❌       |      ✅       |
+| Tracking farm profit via your Telegram bot     |      ❌       |      ✅       |
 | All referrals become yours                     |      ❌       |      ✅       |
-
-
-
-
-
 
 
 ---
 
 ## Paid Version
 
-The paid version is now available for purchase. Contact via Telegram @best_soft_seller for more details. 💎📲 
+The paid version is now available for purchase. Contact via Telegram market [**@MaineMarketBot**](https://t.me/MaineMarketBot) for more details. 💎📲 
 ---
 
 ## Configuration
